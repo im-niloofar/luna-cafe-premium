@@ -1,3 +1,4 @@
+```jsx
 import React from "react";
 import {
   ArrowLeft,
@@ -16,7 +17,7 @@ export default function Hero({ scrollTo, reservation }) {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/images/hero/luna-hero.jpg')",
+          backgroundImage: `url('${import.meta.env.BASE_URL}images/hero/luna-hero.jpg')`,
         }}
       />
 
@@ -136,3 +137,5 @@ export default function Hero({ scrollTo, reservation }) {
     </section>
   );
 }
+```
+
