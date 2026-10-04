@@ -2,10 +2,10 @@ import React from "react";
 import { ArrowUpLeft, Sparkles } from "lucide-react";
 
 const imgs = [
-  "/images/gallery/gallery-01.jpg",
-  "/images/gallery/gallery-02.jpg",
-  "/images/gallery/gallery-03.jpg",
-  "/images/gallery/gallery-04.jpg",
+  `${import.meta.env.BASE_URL}images/gallery/gallery-01.jpg`,
+  `${import.meta.env.BASE_URL}images/gallery/gallery-02.jpg`,
+  `${import.meta.env.BASE_URL}images/gallery/gallery-03.jpg`,
+  `${import.meta.env.BASE_URL}images/gallery/gallery-04.jpg`,
 ];
 
 export default function Gallery() {
