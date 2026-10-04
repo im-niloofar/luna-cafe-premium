@@ -31,7 +31,7 @@ export default function About() {
               <div className="relative aspect-[4/5] overflow-hidden">
 
                 <img
-                  src="/images/about/about-cafe.jpg"
+                  src={`${import.meta.env.BASE_URL}images/about/about-cafe.jpg`}
                   alt="فضای لونا"
                   className="
                     h-full w-full
