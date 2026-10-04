@@ -1,4 +1,3 @@
-```jsx
 import React from "react";
 import {
   ArrowLeft,
@@ -13,7 +12,6 @@ export default function Hero({ scrollTo, reservation }) {
       id="home"
       className="relative min-h-[calc(100vh-96px)] overflow-hidden bg-[#30231b]"
     >
-      {/* ================= Background Image ================= */}
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
@@ -21,17 +19,13 @@ export default function Hero({ scrollTo, reservation }) {
         }}
       />
 
-      {/* ================= Dark Overlay ================= */}
       <div className="absolute inset-0 bg-gradient-to-l from-[#211811]/95 via-[#30231b]/75 to-[#30231b]/35" />
 
-      {/* ================= Warm Glow ================= */}
       <div className="absolute -right-32 top-20 h-96 w-96 rounded-full bg-[#c49568]/10 blur-3xl" />
 
-      {/* ================= Content ================= */}
       <div className="relative mx-auto flex min-h-[calc(100vh-96px)] max-w-7xl items-center px-5 py-20 lg:px-8">
         <div className="w-full max-w-2xl text-right text-white">
 
-          {/* Label */}
           <div className="mb-7 flex items-center justify-end gap-4 text-[10px] font-medium tracking-[0.25em] text-[#d8b084]">
             <span className="h-px w-12 bg-[#c49568]" />
 
@@ -40,7 +34,6 @@ export default function Hero({ scrollTo, reservation }) {
             <span className="h-px w-12 bg-[#c49568]" />
           </div>
 
-          {/* Title */}
           <h1 className="font-serif text-5xl font-medium leading-[1.25] sm:text-6xl lg:text-7xl">
             لحظه‌های خوب
             <br />
@@ -50,16 +43,13 @@ export default function Hero({ scrollTo, reservation }) {
             </em>
           </h1>
 
-          {/* Description */}
           <p className="mt-7 ml-auto mr-0 max-w-xl text-sm leading-8 text-[#eadfd4] sm:text-base">
             یک فضای گرم و آرام برای قهوه‌های تخصصی، غذاهای دست‌ساز و
             قرارهایی که دوست داری طولانی‌تر شوند.
           </p>
 
-          {/* Buttons */}
           <div className="mt-9 flex flex-wrap items-center justify-end gap-3">
 
-            {/* Menu Button */}
             <button
               onClick={() => scrollTo("menu")}
               className="
@@ -79,7 +69,6 @@ export default function Hero({ scrollTo, reservation }) {
               />
             </button>
 
-            {/* Reservation Button */}
             <button
               onClick={reservation}
               className="
@@ -95,10 +84,8 @@ export default function Hero({ scrollTo, reservation }) {
             </button>
           </div>
 
-          {/* Info */}
           <div className="mt-12 flex flex-wrap items-center justify-end gap-x-8 gap-y-4 border-t border-white/15 pt-6">
 
-            {/* Fresh Roast */}
             <div className="flex items-center gap-2 text-xs text-[#ded2c6]">
               <Coffee
                 size={17}
@@ -108,7 +95,6 @@ export default function Hero({ scrollTo, reservation }) {
               <span>رُست تازه</span>
             </div>
 
-            {/* Location */}
             <div className="flex items-center gap-2 text-xs text-[#ded2c6]">
               <MapPin
                 size={17}
@@ -118,7 +104,6 @@ export default function Hero({ scrollTo, reservation }) {
               <span>ولیعصر، تهران</span>
             </div>
 
-            {/* Opening Hours */}
             <div className="flex items-center gap-2 text-xs text-[#ded2c6]">
               <Clock3
                 size={17}
@@ -132,10 +117,7 @@ export default function Hero({ scrollTo, reservation }) {
         </div>
       </div>
 
-      {/* Bottom Decorative Line */}
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-l from-transparent via-[#c49568]/40 to-transparent" />
     </section>
   );
 }
-```
-
